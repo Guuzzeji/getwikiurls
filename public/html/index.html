@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Wiki, search, Wikipedia, research, find, Search, Research, Find, google, Google">
+    <meta name="description" content="Find Websites From Wikipedia">
+    <meta name="author" content="none">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="./lib/uikit.min.css"/>
+    <!-- UIkit JS -->
+    <script src="./lib/uikit.min.js"></script>
+    <script src="./lib/uikit-icons.min.js"></script>
+
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script defer src="./src/js/main.js"></script>
+    <title>Get Wiki-Urls</title>
+</head>
+
+<body class="uk-container">
+    <div class="uk-flex uk-flex-center uk-flex-column uk-flex-middle uk-flex-auto">
+
+        <br>
+        <h1 style="font-weight: 500;"><a style="text-decoration: none; color: black;" href="/">Get Wiki-Urls</a></h1>
+        <span>Find Websites From <a style="text-decoration: none;" href="https://en.wikipedia.org/">Wikipedia</a></span>
+        <br>
+
+        <div>
+            <div class="uk-margin">
+                <div class="uk-search uk-search-default" style="width: 300px;">
+                    <button style="color: #8a8a8a;" id="btn_input" class="uk-search-icon-flip" uk-search-icon></button>
+                    <input style="color: black; border-width: 1px; border-radius: 5px;" id="search_input" class="uk-search-input" type="search" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+        <div class="uk-button-group">
+            <button class="uk-button uk-button-default" id=".com_btn">.com</button>
+            <button class="uk-button uk-button-default" id=".org_btn">.org</button>
+            <button class="uk-button uk-button-default" id="all_btn">all</button>
+        </div>
+        
+        <br>
+        <span id="url-title" style="display: none; font-weight: 600">Urls</span>
+        <div id="urls-list">
+        </div>
+        <br>
+    
+        <br>
+        <span id="terms-title" style="display: none; font-weight: 600;" >Other Terms</span>
+        <div id="other-terms">
+        </div>
+
+        <br>
+    </div>
+</body>
+
+</html>

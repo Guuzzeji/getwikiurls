@@ -1,0 +1,2 @@
+PORT= "port number go here"
+PRODUCTION= "true || false"
